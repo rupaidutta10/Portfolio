@@ -1,0 +1,101 @@
+#intro {
+    height:calc(100vh - 4rem);
+    width:100vw;
+    max-width:75rem;
+    margin: 0 auto;
+    overflow:hidden;
+    position:relative;
+}
+.bg{
+    position: absolute;
+    top:-4rem;
+    right:0;
+    object-fit: cover;
+    z-index:-1;
+    height:100vh;
+}
+.introContent{
+    height:100vh;
+    width:100vw;
+    padding:2rem;
+    font-size: 3rem;
+    font-weight:700;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hello{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.introName{
+    color:yellow;
+}
+.introPara{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+.btn{
+    margin:10rem 10rem 1rem 5rem;
+    box-sizing: content-box; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    background:white ;
+    padding:0.75rem 2rem;
+    border-radius: 2rem;
+    width:8rem;
+    height: auto;
+    /*width: auto;/* Let it adjust based on content */
+    height: 1rem; /* Let it adjust based on content */
+    display: inline-block; /* Ensure it behaves as an inline element */
+    text-decoration: none; /* Remove underline for links */
+    color: black; /* Set the text color */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    white-space: nowrap; 
+    font-size: 1.3rem;
+    border:#BC13FE;
+}
+.btnImg{
+    object-fit:cover;
+    margin:0 0.25rem;
+    height:3rem;
+    width: 3rem;
+    align-items: flex-start;
+    margin-left: 0.5rem; /* Add some space between image and text */
+}
+.btnImg:first-child {
+    margin-left: 0; /* Remove the margin from the left side of the first child (the image) */
+}
+.btn{
+    margin : 1rem;
+    cursor:pointer;
+    border:3px solid  #BC13FE;
+}
+.btn:hover{
+   
+    background-color:bisque;
+    border: 5px solid #6e2c88;
+    /* Makes the border circular */
+    font-weight: 400;
+}
+@media screen and (max-width:840px) {
+    .bg{
+        right: -10vw;
+    }
+    .introContent{
+        font-size:10vw;
+    }
+    .hello{
+        font-size:4.5vw;
+    }
+}
+@media screen and (max-width:840px) {
+    .bg{
+        right: -20vw;
+    }
+}

@@ -1,0 +1,33 @@
+.background-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the video behind other content */
+  }
+  
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the video to cover the container */
+  }
+  .navbar {
+    z-index: 1; /* Adjust the value as needed */
+  }
+  
+  .works {
+    z-index: 1; /* Adjust the value as needed */
+  }
+  
+  .skill {
+    z-index: 1; /* Adjust the value as needed */
+  }
+  
+  .footer {
+    z-index: 1; /* Adjust the value as needed */
+  }
+  
+  
+  
+  
